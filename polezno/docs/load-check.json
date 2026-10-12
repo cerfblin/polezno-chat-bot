@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "scope": "Offline synthetic SQLite/Engine/DeliveryWorker; no Telegram, LLM or production data",
+  "conversations": 100,
+  "historicalSentRows": 10000,
+  "deliveredFiles": 200,
+  "requests": 1303,
+  "temporaryErrors": 96,
+  "permanentErrors": 4,
+  "restartTested": true,
+  "adminRetryTested": true,
+  "duplicateUpdatesSuppressed": 200,
+  "wrongRecipientFiles": 0,
+  "duplicateSuccessfulFiles": 0,
+  "pendingDeliveries": 0,
+  "failedDeliveries": 0,
+  "durationMs": 2267,
+  "limitation": "Not a measurement of Telegram/LLM throughput or production capacity"
+}

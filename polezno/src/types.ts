@@ -1,0 +1,30 @@
+export type State = 'ai' | 'queued' | 'doctor' | 'closed';
+export type MediaKind = 'photo' | 'document' | 'video' | 'audio' | 'voice' | 'animation' | 'sticker' | 'video_note';
+export type Content = { text: string; kind?: MediaKind; fileId?: string; unsupported?: boolean; edited?: boolean };
+export type TgMessage = {
+  message_id: number; chat: {id: number; type: string}; from?: {id: number; is_bot?: boolean};
+  text?: string; caption?: string; photo?: {file_id: string}[];
+  document?: {file_id: string}; video?: {file_id: string}; audio?: {file_id: string};
+  voice?: {file_id: string}; animation?: {file_id: string}; sticker?: {file_id: string};
+  video_note?: {file_id: string}; reply_to_message?: {message_id: number};
+  contact?: unknown; location?: unknown; media_group_id?: string;
+};
+export type Update = {update_id: number; message?: TgMessage; edited_message?: TgMessage;
+  callback_query?: {id: string; from: {id: number}; data?: string; message?: TgMessage}};
+export type Conversation = {id: string; user_id: number; state: State; doctor_id: number | null; version: number; source: string; created_at: number; closed_at: number | null};
+export type SavedMessage = {id: number; conversation_id: string; role: 'user'|'assistant'|'doctor'|'system'; content: string; created_at: number};
+export type Outgoing = {id: number; method: string; payload: string; conversation_id: string | null; guard_version: number | null; category: string; attempts: number; next_at: number; destination: string; status: string};
+export type AiJob = {id: number; conversation_id: string; version: number; status: string};
+export type Schedule = Record<string, [string,string][]>;
+export type Config = {
+  mode: 'demo'|'live'; token: string; groupId: number; doctorIds: number[]; adminIds: number[];
+  databasePath: string; knowledgePath: string; catalogPath: string; catalogSource:string; catalogSyncSeconds:number; miniAppUrl: string;
+  timezone: string; schedule?: Schedule; llmProvider: 'compatible'|'openrouter-free'; llmBaseUrl: string; llmKey: string; llmModel: string;
+  llmAnswerMode: 'sources'|'direct'; llmTimeoutMs: number; catalogMaxAgeDays: number; ratePerMinute: number; port: number;
+};
+export type KnowledgeItem = {id: string; title: string; text: string; url: string; keywords: string[];
+  enabled: boolean; reviewedBy: string; checkedAt: string; clinicianReviewed: boolean};
+export type Product = {id: string; name: string; description: string; composition: string; purpose: string;
+  restrictions: string; usage: string; inStock: boolean; url: string; updatedAt: string; approved: boolean};
+export type Evidence = {id: string; title: string; text: string; url: string; type: 'knowledge'|'product'};
+export type AiAnswer = {action: 'answer'|'clarify'|'handoff'; text: string; sourceIds: string[]; productIds: string[]};

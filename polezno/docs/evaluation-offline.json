@@ -1,0 +1,107 @@
+{
+  "date": "2026-10-11T19:32:11.697Z",
+  "mode": "offline",
+  "provider": "extractive",
+  "model": null,
+  "telegramRequests": 0,
+  "patientDataUsed": false,
+  "knowledgeItems": 8,
+  "total": 7,
+  "passed": 7,
+  "results": [
+    {
+      "id": "general-supplements",
+      "passed": true,
+      "checks": {
+        "state": true,
+        "llmCalls": true,
+        "evidence": true,
+        "deliveredSources": true,
+        "context": true,
+        "noProductIds": true
+      },
+      "llmCalls": 1
+    },
+    {
+      "id": "vitamin-d-follow-up",
+      "passed": true,
+      "checks": {
+        "state": true,
+        "llmCalls": true,
+        "evidence": true,
+        "deliveredSources": true,
+        "context": true,
+        "noProductIds": true
+      },
+      "llmCalls": 2
+    },
+    {
+      "id": "magnesium-food",
+      "passed": true,
+      "checks": {
+        "state": true,
+        "llmCalls": true,
+        "evidence": true,
+        "deliveredSources": true,
+        "context": true,
+        "noProductIds": true
+      },
+      "llmCalls": 1
+    },
+    {
+      "id": "unknown-product",
+      "passed": true,
+      "checks": {
+        "state": true,
+        "llmCalls": true,
+        "evidence": true,
+        "deliveredSources": true,
+        "context": true,
+        "noProductIds": true,
+        "clarification": true
+      },
+      "llmCalls": 0
+    },
+    {
+      "id": "personal-intake-and-pause",
+      "passed": true,
+      "checks": {
+        "state": true,
+        "llmCalls": true,
+        "evidence": true,
+        "deliveredSources": true,
+        "context": true,
+        "noProductIds": true
+      },
+      "llmCalls": 0
+    },
+    {
+      "id": "medical-file",
+      "passed": true,
+      "checks": {
+        "state": true,
+        "llmCalls": true,
+        "evidence": true,
+        "deliveredSources": true,
+        "context": true,
+        "noProductIds": true,
+        "filePreserved": true
+      },
+      "llmCalls": 0
+    },
+    {
+      "id": "shop-stays-in-miniapp",
+      "passed": true,
+      "checks": {
+        "state": true,
+        "llmCalls": true,
+        "evidence": true,
+        "deliveredSources": true,
+        "context": true,
+        "noProductIds": true,
+        "miniApp": true
+      },
+      "llmCalls": 0
+    }
+  ]
+}

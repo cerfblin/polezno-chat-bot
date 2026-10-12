@@ -1,0 +1,12 @@
+services:
+  bot:
+    build: .
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      DATABASE_PATH: /app/var/polezno.sqlite
+    volumes:
+      - polezno-data:/app/var
+    stop_grace_period: 45s
+volumes:
+  polezno-data:

@@ -1,0 +1,43 @@
+{
+  "scope": "Configuration and content metadata only; not clinical or deployment approval",
+  "patientDataRead": false,
+  "externalRequests": 0,
+  "checks": {
+    "catalog": {
+      "status": "missing",
+      "records": 0,
+      "eligibleProducts": 0,
+      "sourceConfigured": false
+    },
+    "materials": {
+      "status": "needs_review",
+      "enabled": 8,
+      "withoutClinicianReview": 8
+    },
+    "doctors": {
+      "status": "configured",
+      "configuredCount": 1,
+      "qualificationConfirmed": false
+    },
+    "schedule": {
+      "status": "missing",
+      "timezone": "Europe/Moscow"
+    },
+    "ai": {
+      "status": "configured",
+      "externalAvailabilityChecked": false,
+      "freeOnly": true
+    },
+    "miniApp": {
+      "status": "deferred"
+    }
+  },
+  "manualAcceptance": [
+    "Confirm practicing doctors and the working schedule",
+    "Approve sources, answer boundaries and a responsible reviewer",
+    "Verify remaining live Telegram concurrency, AI handoff and delivery recovery",
+    "Agree privacy boundaries and access/retention",
+    "Verify permanent hosting, startup, backup and restore"
+  ],
+  "fullSpecificationAccepted": false
+}

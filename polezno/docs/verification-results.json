@@ -1,0 +1,262 @@
+{
+  "date": "2026-10-12",
+  "node": "24.19.0",
+  "typecheck": "passed",
+  "tests": {
+    "total": 90,
+    "passed": 90,
+    "failed": 0,
+    "skipped": 0
+  },
+  "offline_demo": "passed",
+  "concurrent_claim_workers": 2,
+  "runtime_polling_simulation": "passed",
+  "sqlite_snapshot_restore": "passed",
+  "external_telegram_tested": true,
+  "external_llm_tested": true,
+  "docker_tested": false,
+  "catalog_identified": false,
+  "external_telegram_scope": "Owner-confirmed two-account textual doctor request, claim, reply, close; checked DB events and sent outbox. Owner additionally confirmed photo/PDF, doctor reply and close on 2026-10-12.",
+  "free_external_provider": "OpenRouter / Novita; apodex/apodex-1.1-mini:free; zero price cap, ZDR, no-data-collection",
+  "external_llm_status": "Owner confirmed Telegram AI answers; synthetic acceptance 7/7 with four external API calls. Clinical quality assessment pending.",
+  "external_llm_telegram_tested": true,
+  "external_llm_telegram_evidence": "Owner confirmation; aggregate counts: two done AI jobs and two assistant messages; no message content read.",
+  "knowledge_items": 8,
+  "clinician_reviewed": false,
+  "catalog_deferred_by_owner": true,
+  "miniapp_deferred_by_owner": true,
+  "evaluation_offline": {
+    "total": 7,
+    "passed": 7,
+    "report": "evaluation-offline.json"
+  },
+  "evaluation_external": {
+    "total": 7,
+    "passed": 7,
+    "llm_calls": 4,
+    "telegram_requests": 0,
+    "patient_data_used": false,
+    "report": "evaluation-live.json"
+  },
+  "telegram_menu": {
+    "applied": true,
+    "verified_readback": true,
+    "default_commands": 4,
+    "private_role_scopes": 1,
+    "doctor_scopes": 1,
+    "admin_scopes": 1
+  },
+  "runtime_state": "running_temporarily_by_explicit_owner_authorization",
+  "local_health_reachable": true,
+  "local_autostart_installed": false,
+  "local_backup_task_installed": false,
+  "temporary_test_task_removed": true,
+  "windows_tasks_registration_and_removal_tested": true,
+  "windows_wrapper_runtime_tested": true,
+  "snapshot_integrity_tested": true,
+  "snapshot_restore_without_source_wal_tested": true,
+  "handoff_snapshot": {
+    "encrypted_in_transfer": true,
+    "raw_in_source_archive": false,
+    "bytes": 106496,
+    "conversations": 2,
+    "messages": 11,
+    "pending_deliveries": 0
+  },
+  "local_development_resumed_by_owner": true,
+  "windows_wrapper_synthetic_tested": true,
+  "windows_wrapper_crash_exit_propagated": true,
+  "windows_wrapper_log_rotation_tested": true,
+  "windows_scheduler_automatic_restart_tested": false,
+  "live_start_attempt": "Succeeded after explicit owner authorization on 2026-10-12.",
+  "local_readiness_http_status": 200,
+  "local_health_http_status": 200,
+  "local_failed_deliveries": 0,
+  "local_live_node_processes": 1,
+  "local_runtime_pid": 23576,
+  "local_wrapper_pid": 19516,
+  "source_pc_cleanup_required_after_verified_migration": true,
+  "development_progress_estimate_percent": 97,
+  "delivery_recovery": {
+    "synthetic_tested": true,
+    "initial_regression_reproduced": true,
+    "failed_attachment_blocks_later_same_case_messages": true,
+    "other_cases_continue": true,
+    "sqlite_restart_and_admin_retry_tested": true,
+    "sent_attachments_not_repeated": true,
+    "replayed_inbound_update_deduplicated": true,
+    "external_telegram_media_tested": true,
+    "external_telegram_media_evidence": "Owner confirmed the requested two-account photo/PDF -> doctor claim -> reply -> close test: все работает. Message contents were not read."
+  },
+  "pre_deployment_snapshot": {
+    "path": "var/backups/polezno-before-spec-fixes-f5cd55ea-6a88-48b8-8223-5b4cbe334420.sqlite",
+    "verified": true,
+    "bytes": 172032,
+    "conversations": 4,
+    "messages": 59,
+    "pending_deliveries": 0
+  },
+  "latest_test_log": "work/polezno-tests-spec-gaps-2026-10-12.log (workspace root)",
+  "offline_load_check": {
+    "passed": true,
+    "scope": "Offline synthetic SQLite/Engine/DeliveryWorker; no Telegram, LLM or production data",
+    "conversations": 100,
+    "historicalSentRows": 10000,
+    "deliveredFiles": 200,
+    "requests": 1303,
+    "temporaryErrors": 96,
+    "permanentErrors": 4,
+    "restartTested": true,
+    "adminRetryTested": true,
+    "duplicateUpdatesSuppressed": 200,
+    "wrongRecipientFiles": 0,
+    "duplicateSuccessfulFiles": 0,
+    "pendingDeliveries": 0,
+    "failedDeliveries": 0,
+    "durationMs": 2267,
+    "limitation": "Not a measurement of Telegram/LLM throughput or production capacity",
+    "report": "load-check.json",
+    "slow_baseline": "Previous query run stopped after 100 seconds without completing; no baseline completion time available."
+  },
+  "queue_optimization_runtime_deployed": true,
+  "latest_runtime_update_attempt": "Conversation topic retrieval and shop-operator routing fixes deployed after idle check and verified backup; health/ready HTTP 200, failed deliveries 0, managed Windows tasks 0 on 2026-10-12.",
+  "pending_synthetic_directory_cleanup": "C:/Users/User/AppData/Local/Temp/polezno-load-TZczDG (interrupted offline benchmark; synthetic data only)",
+  "spec_review": {
+    "date": "2026-10-12",
+    "source_document_id": "19tfGZFmGt2qc4FdB9DY80tpBSDk7TRhkfTIJ9ZRG7K8",
+    "source_reread": true,
+    "matrix": "WORKFLOW.md section 17",
+    "full_spec_completion_percent": null,
+    "previous_96_percent_scope": "Subjective technical estimate only; current estimate 97 also is not full specification completion.",
+    "main_unfinished_spec_blocks": [
+      "Actual store catalog and recommendations with current product links",
+      "Approved medical sources, answer boundaries and responsible reviewer",
+      "Practicing doctors and real working schedule",
+      "Remaining live acceptance and privacy boundary for file contents"
+    ],
+    "latest_audit": "WORKFLOW.md section 22; source reread in section 21",
+    "autonomous_gaps_reproduced": [
+      {
+        "id": "topic-switch-retrieval",
+        "status": "fixed_tested_runtime_deployed",
+        "example": "Vitamin D -> А витамин C? -> no evidence despite available vitamin C source"
+      },
+      {
+        "id": "shop-operator-routing",
+        "status": "fixed_tested_runtime_deployed",
+        "example": "Переведи на оператора магазина по доставке -> doctor instead of shop"
+      }
+    ],
+    "audit_mutated_runtime": true,
+    "autonomous_gaps_closed": 2
+  },
+  "catalog_integration": {
+    "hot_reload_tested": true,
+    "optional_periodic_source_tested": true,
+    "invalid_source_preserves_previous_catalog": true,
+    "cross_source_id_collisions_rejected": true,
+    "stale_product_context_checked_at_delivery": true,
+    "guard_survives_database_restart": true,
+    "internal_guard_omitted_from_telegram": true,
+    "runtime_deployed": true,
+    "actual_store_source_connected": false,
+    "actual_catalog_products": 0
+  },
+  "configuration_readiness_report": "configuration-readiness.json",
+  "medical_review_packet": "MEDICAL-REVIEW.md",
+  "personal_supplement_routing_extended": true,
+  "telegram_ui": {
+    "runtime_deployed": true,
+    "role_reply_keyboards": true,
+    "case_selection_buttons": true,
+    "cases_per_page": 8,
+    "inline_close_confirmation": true,
+    "legacy_close_command_immediate": true,
+    "navigation_excluded_from_history_ai_and_relay": true,
+    "callback_role_and_ownership_tested": true,
+    "profile_verified_readback": true,
+    "visual_confirmation_by_owner": false,
+    "refresh_command": "/start",
+    "new_behavior_tests": 7
+  },
+  "external_llm_telegram_latest_owner_confirmation": {
+    "date": "2026-10-12",
+    "confirmed": true,
+    "scope": "User confirmed AI answers in Telegram; no new external API call made during this continuation."
+  },
+  "independent_ai_delivery_loops": {
+    "runtime_deployed": true,
+    "blocked_delivery_reproduced_before_fix": true,
+    "slow_llm_does_not_block_doctor_handoff_or_replies": true
+  },
+  "runtime_synthetic_acceptance": {
+    "passed": 2,
+    "source": "tests/acceptance.test.ts",
+    "actual_main_and_compatible_adapter": true,
+    "external_requests": 0,
+    "simulated_llm_responses": 4,
+    "patient_data_used": false,
+    "scenarios": [
+      "slow AI -> doctor -> two competing claims -> photo/PDF -> failed PDF retry -> doctor reply -> inline close confirmation -> new clean context",
+      "crashed running AI and pending inbox -> restart -> supersession -> polling/send 429 -> duplicate update suppression"
+    ],
+    "remaining_live_two_doctor_acceptance": true
+  },
+  "conversation_topic_retrieval": {
+    "explicit_topic_switch_tested": true,
+    "relative_followup_chain_tested": true,
+    "unknown_topic_does_not_inherit_previous_source": true,
+    "product_eligibility_tested": true,
+    "runtime_deployed": true,
+    "method": "Conservative lexical matching; not semantic retrieval or clinical validation"
+  },
+  "shop_operator_routing": {
+    "explicit_shop_requests_fixed": true,
+    "emergency_attachment_medical_priority_tested": true,
+    "commercial_permission_requests_remain_shop": true,
+    "runtime_deployed": true
+  },
+  "transfer_preparation_2026_10_12": {
+    "helper_tests": {
+      "total": 5,
+      "passed": 5
+    },
+    "spec_saved_offline": true,
+    "source_runtime_unchanged": true,
+    "live_snapshot_requires_final_after_stop": true,
+    "builder_refuses_active_source_for_final": true,
+    "final_cutover_completed": false,
+    "archive_verification_report": "../../../work/polezno-transfer-check-2026-10-12.json (on original workspace; created after publication)"
+  },
+  "direct_external_ai": {
+    "owner_requested": true,
+    "configuration": "LLM_ANSWER_MODE=direct",
+    "runtime_deployed": true,
+    "live_start_log_verified": true,
+    "local_evidence_optional": true,
+    "conversation_history_preserved": true,
+    "no_live_web_search": true,
+    "medical_approval": false,
+    "synthetic_live_requests": 1,
+    "synthetic_live_result": "validated_direct_answer",
+    "patient_data_used_for_test": false,
+    "new_behavior_tests": 6,
+    "live_telegram_owner_confirmation_pending": true,
+    "previous_transfer_archive_predates_change": true
+  },
+  "latest_pre_deploy_snapshot": {
+    "path": "var/backups/polezno-before-direct-ai-8030a636-67d4-461d-9a2d-ae5e53e6dbcc.sqlite",
+    "bytes": 196608,
+    "conversations": 6,
+    "messages": 70,
+    "pending_deliveries": 0
+  },
+  "single_private_archive": {
+    "owner_explicitly_requested": true,
+    "option": "-IncludeKey",
+    "key_path": "private/restore-key.txt",
+    "whole_archive_encrypted": false,
+    "source_runtime_unchanged": true,
+    "final_cutover_completed": false
+  }
+}
