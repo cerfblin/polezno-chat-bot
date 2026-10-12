@@ -1,0 +1,40 @@
+{
+  "format": 1,
+  "createdAt": "2026-10-12T20:15:10.403Z",
+  "timezone": "Europe/Moscow",
+  "sourceHost": "DESKTOP-DUKEJFD",
+  "sourceProject": "C:\\Users\\User\\Documents\\Codex\\2026-10-11\\dj\\outputs\\polezno",
+  "preliminary": true,
+  "sourceRunningAtSnapshot": true,
+  "sourceStoppedAtBuild": false,
+  "requiresFinalSnapshotAfterSourceStop": true,
+  "snapshot": {
+    "bytes": 258048,
+    "conversations": 6,
+    "messages": 86,
+    "pendingDeliveries": 0
+  },
+  "pending": {
+    "inbox": 0,
+    "ai": 0
+  },
+  "testsAtSource": {
+    "total": 90,
+    "passed": 90,
+    "failed": 0,
+    "skipped": 0
+  },
+  "privatePathsNormalized": [
+    "DATABASE_PATH",
+    "KNOWLEDGE_PATH",
+    "CATALOG_PATH"
+  ],
+  "autostartIncluded": false,
+  "rawSecretsIncluded": true,
+  "bundleType": "all-in-one-private",
+  "keyIncluded": true,
+  "keyPath": "private/restore-key.txt",
+  "settingsAndDatabaseEncrypted": true,
+  "wholeArchiveEncrypted": false,
+  "doNotPublish": true
+}
